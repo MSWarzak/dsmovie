@@ -3,15 +3,28 @@
 * {
     box-sizing: border-box;
     font-family: 'Open Sans';
+    margin: 0;
+}
+
+/* colocando as variáveis com o :root */
+
+:root {
+    --bg-gray: #ddd;
+    --color-primary: #4d41c0;
+    --white: #fff;
+
 }
 
 html, body {
-    background-color: #ddd;
+    background-color: var(--bg-gray);
 }
 
 header {
-    background-color: #4d41c0;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -21,7 +34,25 @@ nav {
     justify-content: space-between;
 }
 
+/* Estilizar o h1 dentro do nav */
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
 #git {
     color: unset;
     text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 10px;
 }
