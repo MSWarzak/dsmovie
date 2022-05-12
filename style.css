@@ -62,7 +62,8 @@ nav h1 {
 }
 
 #dsmovie-card-list {
-    padding: 40px 0;
+    padding: 40px 10px;
+
 }
 
 /* Para os cards ficarem responsivos, colocar o widht em 100%, porém não é somente isso, para as colunas diminuirem na página quando a página encolher é preciso ver os Breakpoints do Bootstrap, olhar esse link, https://github.com/devsuperior/sds-dsmovie/tree/main/episodio1-iniciante*/
@@ -89,7 +90,7 @@ nav h1 {
 
 .dsmovie-card-description h3 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
 }
