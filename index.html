@@ -27,6 +27,21 @@
     <main>
         <section id="dsmovie-card-list" class="container">
 
+            <div class="dsmovie-pagination-container">
+                <div class="dsmovie-pagination-box">
+                    <!-- atributo disable para deixar o botão desabilitado-->
+                    <button disabled>
+                        <img src="img/erow-left.svg" alt="voltar">
+                    </button>
+                    <p>1 de 23</p>
+                    <!-- dsmovie-flip-horizontal foi add para ser estilizada no css, a img será rotacionada para apontar para direita-->
+                    <button class="dsmovie-flip-horizontal">
+                        <img src="img/erow-left.svg" alt="proxima">
+                    </button>
+
+                </div>
+            </div>
+
             <!--O Bootstrap por padrão ele divide a tela em 12 partes, para haver essa distribuição, é preciso colocar na div Pai a class="row" e em cada div filha, nesse caso a sexta parte de 12 = (col-4), assim teremos três colunas
             o (mb-3) ele coloca uma margin em cada card -->
             <div class="row">

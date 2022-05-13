@@ -62,7 +62,7 @@ nav h1 {
 }
 
 #dsmovie-card-list {
-    padding: 40px 10px;
+    padding: 0px 10px;
 
 }
 
@@ -172,7 +172,58 @@ nav h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
+.dsmovie-pagination-container {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p {
+    margin: 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    /* Conforme a aula, foi preciso estilizar o botão seletor para a seta não ficar apagada, entrar no link https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element, e ler todo material de como mudar a cor de um SVG
+    aqui foi aplicado os filtros do img que está dentro do botão habilitado  */
+.dsmovie-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(76%) saturate(1937%) hue-rotate(230deg) brightness(89%) contrast(85%);
+}
+
+    /* estilizando botão que estiver disabled/desabilitado */
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+}
+
+    /* aqui foi preciso colocar o filter como unset para a cor do botão ficar como desabilitada  */
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
+
+    /* foi aplicado o transform: rotate(180deg) para a segunda img que estava apontando para esq. virar para direita */
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
+}
